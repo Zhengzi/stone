@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD9BA579-33AE-48AC-AC8B-2B44E43237E1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>F_HearthStone</RootNamespace>
+    <AssemblyName>F_HearthStone</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="backup\backup_BattleField.cs" />
+    <Compile Include="backup\backup_Card.cs" />
+    <Compile Include="backup\backup_CardConfig.cs" />
+    <Compile Include="backup\backup_CardDeck.cs" />
+    <Compile Include="BattleField.cs" />
+    <Compile Include="BroadCastObject.cs" />
+    <Compile Include="CardUtil.cs" />
+    <Compile Include="backup\backup_Deck.cs" />
+    <Compile Include="backup\backup_EntryPoint.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="EntryPoint.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="backup\backup_EventManager.cs" />
+    <Compile Include="EventMgr.cs" />
+    <Compile Include="backup\backup_GameServer.cs" />
+    <Compile Include="backup\backup_HandDeck.cs" />
+    <Compile Include="backup\backup_Hero.cs" />
+    <Compile Include="backup\backup_HeroPower.cs" />
+    <Compile Include="backup\backup_Minion.cs" />
+    <Compile Include="backup\backup_MinionCard.cs" />
+    <Compile Include="backup\backup_Player.cs" />
+    <Compile Include="backup\backup_Secret.cs" />
+    <Compile Include="backup\backup_SpellCard.cs" />
+    <Compile Include="backup\backup_SystemConfig.cs" />
+    <Compile Include="backup\backup_TurnManager.cs" />
+    <Compile Include="backup\backup_Weapon.cs" />
+    <Compile Include="backup\backup_WeaponCard.cs" />
+    <Compile Include="GameService.cs" />
+    <Compile Include="Hero.cs" />
+    <Compile Include="HeroPower.cs" />
+    <Compile Include="Minion.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Secret.cs" />
+    <Compile Include="Weapon.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
