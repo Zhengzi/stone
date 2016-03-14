@@ -35,34 +35,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="backup\backup_BattleField.cs" />
-    <Compile Include="backup\backup_Card.cs" />
-    <Compile Include="backup\backup_CardConfig.cs" />
-    <Compile Include="backup\backup_CardDeck.cs" />
     <Compile Include="BattleField.cs" />
     <Compile Include="BroadCastObject.cs" />
     <Compile Include="CardUtil.cs" />
-    <Compile Include="backup\backup_Deck.cs" />
-    <Compile Include="backup\backup_EntryPoint.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Event.cs" />
-    <Compile Include="backup\backup_EventManager.cs" />
     <Compile Include="EventMgr.cs" />
-    <Compile Include="backup\backup_GameServer.cs" />
-    <Compile Include="backup\backup_HandDeck.cs" />
-    <Compile Include="backup\backup_Hero.cs" />
-    <Compile Include="backup\backup_HeroPower.cs" />
-    <Compile Include="backup\backup_Minion.cs" />
-    <Compile Include="backup\backup_MinionCard.cs" />
-    <Compile Include="backup\backup_Player.cs" />
-    <Compile Include="backup\backup_Secret.cs" />
-    <Compile Include="backup\backup_SpellCard.cs" />
-    <Compile Include="backup\backup_SystemConfig.cs" />
-    <Compile Include="backup\backup_TurnManager.cs" />
-    <Compile Include="backup\backup_Weapon.cs" />
-    <Compile Include="backup\backup_WeaponCard.cs" />
     <Compile Include="GameService.cs" />
     <Compile Include="Hero.cs" />
     <Compile Include="HeroPower.cs" />
@@ -73,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevDoc.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

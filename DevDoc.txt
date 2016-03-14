@@ -1,0 +1,31 @@
+﻿Doc
+This is for the development documentation for the hearthstone.
+Hearthstone game flow:
+	1. Turn start
+		trigger secret and disable all secrets
+		enable weapon
+		trigger any of the minion effect
+		player draw a card
+
+	2. In turn
+		play a card
+		minion attacks
+		hero attacks
+		use hero power
+		end a turn
+
+	3. Turn end
+		trigger any of the minion effect
+		disable weapon
+		enable all secrets
+
+Minoin death:
+	be hurted abd killed
+	or be destroyed
+
+	add into the death queue
+
+Any other events, add into the event queue
+
+if event queue has event
+
